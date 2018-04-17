@@ -42,5 +42,5 @@ done
 
 #Modifications: I've changed the output name.
 pdftk tmp.pdf_*.pdf output "$PDF"_ocr.pdf  && rm -f tmp.pdf_*.pdf
-echo "Output written succesfully"
+echo -e "\n\033[1m\e[32mOutput written succesfully\e[0m\033[0m\n"
  
