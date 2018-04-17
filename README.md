@@ -3,6 +3,8 @@ This is a bash scritpt based on the scritp wrote by Akom's Tech Ruminations at h
 
 From the original script I've added an user input to get the file and number of pages, doing so it became more flexible to use.
 
+#Information copied from the original post
+
 This script takes the input PDF and:
 
     splits it into pages
@@ -10,3 +12,9 @@ This script takes the input PDF and:
     performs OCR
     outputs each individual page as PDF
     reassembles the PDF
+    
+Prerequisites:
+
+    tesseract
+    imagemagick
+    pdftk
