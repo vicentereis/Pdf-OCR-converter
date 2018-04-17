@@ -41,6 +41,7 @@ _sudo apt-get install imagemagick_
 _sudo apt-get install pdftk_
 
 **LEIA-ME - PORTUGUÊS**
+
 Esse script é baseado no script originalmente escrito por by Akom's Tech Ruminations at http://tech.akom.net/archives/126-OCR-on-a-large-PDF-using-tesseract-and-pdftk.html
 
 A partir do script original eu adicionei uma interface textual para inserir o nome do arquivo e o número de páginas, assim se torna mais flexível para o uso. 
