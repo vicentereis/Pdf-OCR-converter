@@ -1,22 +1,31 @@
 #!/bin/bash -e
 #This cript is based on a Akom's Tech Ruminations script. I've added a user input to make it more flexible.
 
-#Deletions
-#if [ -z "$2" ] ; then
-#        echo "usage $0 PDF NUMPAGES"
-#fi
-#
-#PDF="$1"
-#NUM="$2"
 
 #Additions
 
-echo -e "\n"
-read -e -p "Enter filename, use tab for completion: " PDF
-echo -e "\n"
-echo "Arquivo selecionado: " ls  "$PDF"
-echo -e "\n"
-read -p "Enter the number of pages: " NUM
+select_file(){
+	
+	read -e -p "Enter filename, use tab for completion: " PDF
+	echo -e "\n"
+	echo -e "Arquivo selecionado: " "\e[34m\033[1m$PDF\033[0m\e[0m"
+	echo -e "\n"
+	read -r -p "Continue? [y/n] " response
+	if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]] ; then
+		read -p "Enter the number of pages: " NUM
+	
+	else
+		echo -e "\n\033[1m\e[31mTry again\e[0m\033[0m \n"
+		#if you want the program to restart if the user chooses no, then uncomment the line below and place the file's path
+		#bash /PATH_to/the/pdt-ocr-converter.sh
+		exit 0	
+	fi
+}
+
+echo -e "\033[1mUsage\033[0m: Enter the file name and the number of pages. \n\e[2mIf you want to cancel type \e[4mCtrl+C\e[24m at any moment\e[22m\n"
+
+select_file
+
 
 #Original script
 
@@ -31,7 +40,7 @@ for PAGE in $(seq -f "%05g" 1 $NUM) ; do
 	echo "Temp files removed"
 done
 
-
-pdftk tmp.pdf_*.pdf output ocr-output.pdf  && rm -f tmp.pdf_*.pdf
-echo "Output written to ocr-output.pdf"
+#Modifications: I've changed the output name.
+pdftk tmp.pdf_*.pdf output "$PDF"_ocr.pdf  && rm -f tmp.pdf_*.pdf
+echo "Output written succesfully"
  
