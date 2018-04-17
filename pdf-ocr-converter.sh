@@ -16,7 +16,7 @@ select_file(){
 	
 	else
 		echo -e "\n\033[1m\e[31mTry again\e[0m\033[0m \n"
-		#if you want the program to restart if the user chooses no, then uncomment the line below and place the file's path
+		#if you want the program to restart if the user chooses no, then uncomment the line below and place the path to this script
 		#bash /PATH_to/the/pdt-ocr-converter.sh
 		exit 0	
 	fi
