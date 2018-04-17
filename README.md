@@ -31,7 +31,7 @@ _sudo apt install libtesseract-dev_
 
 **Imagemagick** (https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
-_sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev
+_sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev_
 
 _sudo apt-get install imagemagick_
 
@@ -72,7 +72,7 @@ _sudo apt install libtesseract-dev_
 
 **Imagemagick** (https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
-_sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev
+_sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev_
 
 _sudo apt-get install imagemagick_
 
