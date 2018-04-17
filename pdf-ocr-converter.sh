@@ -1,9 +1,13 @@
 #!/bin/bash -e
 #This cript is based on a Akom's Tech Ruminations script. I've added a user input to make it more flexible.
 
-if [ -z "$2" ] ; then
-        echo "Usage: Enter the file name and the number of pages"
-fi
+#Deletions
+#if [ -z "$2" ] ; then
+#        echo "usage $0 PDF NUMPAGES"
+#fi
+#
+#PDF="$1"
+#NUM="$2"
 
 #Additions
 
