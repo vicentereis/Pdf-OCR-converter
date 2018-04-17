@@ -23,10 +23,12 @@ Prerequisites:
 To install prerequisites 
 
 **Tesseract**
-_sudo apt install tesseract-ocr
-sudo apt install libtesseract-dev_
 
-Imagemagick
+_sudo apt install tesseract-ocr_
+_sudo apt install libtesseract-dev_
+
+**Imagemagick**
+
 _sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev
 sudo apt-get install imagemagick_
 
@@ -57,10 +59,12 @@ Pré requisitos:
 Para instalar os pré requisitos:
 
 **Tesseract**
-_sudo apt install tesseract-ocr
-sudo apt install libtesseract-dev_
 
-Imagemagick
+_sudo apt install tesseract-ocr_
+_sudo apt install libtesseract-dev_
+
+**Imagemagick**
+
 _sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev
 sudo apt-get install imagemagick_
 
