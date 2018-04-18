@@ -24,16 +24,15 @@ To install prerequisites
 
 **Tesseract** (https://github.com/tesseract-ocr/)
 
-_sudo apt install tesseract-ocr_
+_sudo apt-get install tesseract-ocr_
 
-_sudo apt install libtesseract-dev_
+_sudo apt-get install libtesseract-dev_
 
 
 **Imagemagick** (https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
 _sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev_
 
-_sudo apt-get install imagemagick_
 
 
 **Pdftk** (https://www.imagemagick.org/script/index.php)
@@ -72,16 +71,15 @@ Para instalar os pré requisitos:
 
 **Tesseract** (https://github.com/tesseract-ocr/)
 
-_sudo apt install tesseract-ocr_
+_sudo apt-get install tesseract-ocr_
 
-_sudo apt install libtesseract-dev_
+_sudo apt-get install libtesseract-dev_
 
 
 **Imagemagick** (https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
 _sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev libmagic-dev_
 
-_sudo apt-get install imagemagick_
 
 
 **Pdftk** (https://www.imagemagick.org/script/index.php)
