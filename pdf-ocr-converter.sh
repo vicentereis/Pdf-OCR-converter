@@ -27,12 +27,12 @@ echo -e "\033[1mUsage\033[0m: Enter the file name and the number of pages. \n\e[
 select_file
 
 #Organizing the mess
-
 folder=$(echo $PDF | cut -f 1 -d '.')_OCR
+new_folder="${folder// /_}"
 
-mkdir ./$folder
-cp $PDF ./$folder
-cd ./$folder
+mkdir ./$new_folder
+cp "$PDF" ./$new_folder 
+cd ./$new_folder 
 
 #Original script
 
@@ -48,9 +48,9 @@ for PAGE in $(seq -f "%05g" 1 $NUM) ; do
 done
 
 #Modifications: I've changed the output name and organized the process with a temporary folder
-pdftk tmp.pdf_*.pdf output "$PDF"_ocr.pdf  && rm -f tmp.pdf_*.pdf
-cp "$PDF"_OCR.pdf ../
+pdftk tmp.pdf_*.pdf output "$folder".pdf  && rm -f tmp.pdf_*.pdf 
+cp "$folder".pdf ../
 cd ../
-rm -rf $folder
+rm -rf "$new_folder"
 echo -e "\n\033[1m\e[32mOutput written succesfully\e[0m\033[0m\n"
  
